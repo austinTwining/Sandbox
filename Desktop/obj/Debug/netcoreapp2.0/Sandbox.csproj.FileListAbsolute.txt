@@ -1,0 +1,11 @@
+/Users/austinjtwining/Projects/Sandbox/Desktop/obj/Debug/netcoreapp2.0/Sandbox.csprojAssemblyReference.cache
+/Users/austinjtwining/Projects/Sandbox/Desktop/obj/Debug/netcoreapp2.0/Sandbox.csproj.CoreCompileInputs.cache
+/Users/austinjtwining/Projects/Sandbox/Desktop/obj/Debug/netcoreapp2.0/Sandbox.AssemblyInfoInputs.cache
+/Users/austinjtwining/Projects/Sandbox/Desktop/obj/Debug/netcoreapp2.0/Sandbox.AssemblyInfo.cs
+/Users/austinjtwining/Projects/Sandbox/Desktop/bin/Debug/netcoreapp2.0/Sandbox.deps.json
+/Users/austinjtwining/Projects/Sandbox/Desktop/bin/Debug/netcoreapp2.0/Sandbox.runtimeconfig.json
+/Users/austinjtwining/Projects/Sandbox/Desktop/bin/Debug/netcoreapp2.0/Sandbox.runtimeconfig.dev.json
+/Users/austinjtwining/Projects/Sandbox/Desktop/bin/Debug/netcoreapp2.0/Sandbox.dll
+/Users/austinjtwining/Projects/Sandbox/Desktop/bin/Debug/netcoreapp2.0/Sandbox.pdb
+/Users/austinjtwining/Projects/Sandbox/Desktop/obj/Debug/netcoreapp2.0/Sandbox.dll
+/Users/austinjtwining/Projects/Sandbox/Desktop/obj/Debug/netcoreapp2.0/Sandbox.pdb
