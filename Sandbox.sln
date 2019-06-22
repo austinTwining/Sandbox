@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Sandbox", "CommonCode\Sandbox.shproj", "{A0CDBD0E-3A41-42B7-9425-A838BC2C7383}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox", "Desktop\Sandbox.csproj", "{FB9179D4-13A9-43CD-BF19-CA957F8AAFD5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Desktop", "Desktop\Sandbox.Desktop.csproj", "{FB9179D4-13A9-43CD-BF19-CA957F8AAFD5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.iOS", "iOS\Sandbox.iOS.csproj", "{CA7AB65C-57DE-412C-AF42-E7E6EDDF2D5F}"
 EndProject

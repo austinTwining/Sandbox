@@ -8,8 +8,6 @@
 	<array>
 		<string>GameThumbnail.png</string>
 	</array>
-	<key>CFBundleIdentifier</key>
-	<string>project.MonoGame.Sandbox.iOS</string>
 	<key>MinimumOSVersion</key>
 	<string>7.0</string>
 	<key>UISupportedInterfaceOrientations</key>
@@ -21,5 +19,7 @@
 	</array>
 	<key>CFBundleName</key>
 	<string>Sandbox.iOS</string>
+	<key>CFBundleIdentifier</key>
+	<string>project.MonoGame.Sandbox.iOS</string>
 </dict>
 </plist>

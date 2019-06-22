@@ -12,10 +12,15 @@ namespace Sandbox
     /// <summary>
     /// This is the main type for your game.
     /// </summary>
+    ///
+
     public class GameCore : Game
     {
         GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;		
+        SpriteBatch spriteBatch;
+        Texture2D tex;
+        Vector2 position;
+        Vector2 velocity;
 
         public GameCore()
         {
@@ -32,6 +37,8 @@ namespace Sandbox
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            position = new Vector2(100, 100);
+            velocity = new Vector2(100, 100);
             base.Initialize();
         }
 
@@ -45,6 +52,7 @@ namespace Sandbox
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             //TODO: use this.Content to load your game content here
+            tex = Content.Load<Texture2D>("manOld_stand");
         }
 
         /// <summary>
@@ -54,7 +62,13 @@ namespace Sandbox
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            // TODO: Add your update logic here			
+            // TODO: Add your update logic here
+
+            position += velocity * (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+           if(position.Y > graphics.GraphicsDevice.Viewport.Height - tex.Height || position.Y < 0) velocity.Y = -velocity.Y;
+           if(position.X > graphics.GraphicsDevice.Viewport.Width - tex.Width || position.X < 0) velocity.X = -velocity.X;
+
             base.Update(gameTime);
         }
 
@@ -67,6 +81,12 @@ namespace Sandbox
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             //TODO: Add your drawing code here
+            spriteBatch.Begin();
+
+            spriteBatch.Draw(tex, position, Color.White);
+
+            spriteBatch.End();
+
             base.Draw(gameTime);
         }
     }
