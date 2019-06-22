@@ -1,3 +1,7 @@
 .vs/
 Destop/bin/
 Desktop/obj/
+iOS/bin/
+iOS/obj/
+Android/bin/
+Android/obj

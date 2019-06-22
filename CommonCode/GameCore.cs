@@ -36,8 +36,7 @@ namespace Sandbox
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            for (int i = 0; i < 10; i++)
-                gameObjects.Add(new BouncingBall(Content.Load<Texture2D>("emote_faceAngry"), new Vector2(rand.Next(1, (int)screenSize.X), rand.Next(1, (int)screenSize.Y)), screenSize));
+            
             gameObjects.Add(new Player(Content.Load<Texture2D>("emote_faceAngry"), new Vector2(300, 300)));
         }
 
