@@ -30,10 +30,5 @@ namespace Sandbox
 
             base.Update(gameTime);
         }
-
-        public override void Draw(SpriteBatch sb, GameTime gt)
-        {
-            base.Draw(sb, gt);
-        }
     }
 }

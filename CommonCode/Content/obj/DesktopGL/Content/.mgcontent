@@ -4,6 +4,9 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Daniel/Source/Repos/Sandbox/CommonCode/Content/manOld_stand.png</File>
+    <File>/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/emote_faceAngry.png</File>
   </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+  </DestFiles>
 </SourceFileCollection>

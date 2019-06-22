@@ -182,7 +182,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "MonoGame.Content.Builder/3.7.0.4": {
+      "MonoGame.Content.Builder/3.7.0.9": {
         "type": "package",
         "build": {
           "build/MonoGame.Content.Builder.targets": {}
@@ -583,7 +583,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.0.0": {
-      "sha512": "5BdAWDgMNwf90L0J+C/eh6kfHDa37ViL1cBL1nv5zPA4TB2cGV51YiQyvzCEy9DBE0LwwMI4+PkUpIekKyocSA==",
+      "sha512": "VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.0.0",
       "files": [
@@ -599,68 +599,18 @@
         "version.txt"
       ]
     },
-    "MonoGame.Content.Builder/3.7.0.4": {
-      "sha512": "EfPrCHTWQ4O5G/XIfGqWx1J9vvI4QrUI8SjBCIT8Aeepl0y2oi1+YjvmBbxjFvJb2uGkYnLq4GCwXuquMi3TYw==",
+    "MonoGame.Content.Builder/3.7.0.9": {
+      "sha512": "AAt9ns5w6c9JkZFC2UC+nB8v+kTDgRP1ONaB5lLSfzBhrGULUoNwMxiRAzi7GlPVj5yynu3PHNi8kZTOUIdF9g==",
       "type": "package",
-      "path": "monogame.content.builder/3.7.0.4",
+      "path": "monogame.content.builder/3.7.0.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "build/MGCB.zip",
-        "build/MGCB/.signature.p7s",
-        "build/MGCB/MonoGame.Content.Builder.Linux.nuspec",
-        "build/MGCB/[Content_Types].xml",
-        "build/MGCB/_rels/.rels",
-        "build/MGCB/build/ATI.TextureConverter.dll",
-        "build/MGCB/build/ATI.TextureConverter.dll.config",
-        "build/MGCB/build/AssimpNet.dll",
-        "build/MGCB/build/AssimpNet.dll.config",
-        "build/MGCB/build/FreeImageNET.dll",
-        "build/MGCB/build/FreeImageNET.dll.config",
-        "build/MGCB/build/MGCB.exe",
-        "build/MGCB/build/MGCB.exe.config",
-        "build/MGCB/build/MGCB.xml",
-        "build/MGCB/build/MonoGame.Framework.Content.Pipeline.dll",
-        "build/MGCB/build/MonoGame.Framework.Content.Pipeline.xml",
-        "build/MGCB/build/MonoGame.Framework.dll",
-        "build/MGCB/build/MonoGame.Framework.dll.config",
-        "build/MGCB/build/MonoGame.Framework.xml",
-        "build/MGCB/build/Nvidia.TextureTools.dll",
-        "build/MGCB/build/Nvidia.TextureTools.dll.config",
-        "build/MGCB/build/PVRTexLibNET.dll",
-        "build/MGCB/build/PVRTexLibNET.dll.config",
-        "build/MGCB/build/SharpFont.dll",
-        "build/MGCB/build/SharpFont.dll.config",
-        "build/MGCB/build/ffmpeg",
-        "build/MGCB/build/ffprobe",
-        "build/MGCB/build/libPVRTexLibWrapper.so",
-        "build/MGCB/build/libSDL2-2.0.0.dylib",
-        "build/MGCB/build/libassimp.so",
-        "build/MGCB/build/libfreeimage-3.17.0.so",
-        "build/MGCB/build/libnvcore.so",
-        "build/MGCB/build/libnvimage.so",
-        "build/MGCB/build/libnvmath.so",
-        "build/MGCB/build/libnvtt.so",
-        "build/MGCB/build/libopenal.1.dylib",
-        "build/MGCB/build/x64/SDL2.dll",
-        "build/MGCB/build/x64/libSDL2-2.0.so.0",
-        "build/MGCB/build/x64/libopenal.so.1",
-        "build/MGCB/build/x64/soft_oal.dll",
-        "build/MGCB/build/x86/SDL2.dll",
-        "build/MGCB/build/x86/libSDL2-2.0.so.0",
-        "build/MGCB/build/x86/libopenal.so.1",
-        "build/MGCB/build/x86/soft_oal.dll",
         "build/MonoGame.Content.Builder.targets",
-        "monogame.content.builder.3.7.0.4.nupkg.sha512",
+        "monogame.content.builder.3.7.0.9.nupkg.sha512",
         "monogame.content.builder.nuspec",
-        "tasks/net46/Microsoft.Build.Framework.dll",
-        "tasks/net46/Microsoft.Build.Utilities.Core.dll",
         "tasks/net46/MonoGame.Content.Builder.dll",
-        "tasks/net46/MonoGame.Content.Builder.pdb",
-        "tasks/net46/System.Threading.Thread.dll",
-        "tasks/netstandard2.0/MonoGame.Content.Builder.deps.json",
-        "tasks/netstandard2.0/MonoGame.Content.Builder.dll",
-        "tasks/netstandard2.0/MonoGame.Content.Builder.pdb"
+        "tasks/netstandard2.0/MonoGame.Content.Builder.dll"
       ]
     },
     "MonoGame.Framework.DesktopGL.Core/3.7.0.7": {
@@ -821,35 +771,34 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.NETCore.App >= 2.0.0",
-      "MonoGame.Content.Builder >= 3.7.0.4",
+      "MonoGame.Content.Builder >= 3.7.0.9",
       "MonoGame.Framework.DesktopGL.Core >= 3.7.0.7"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Daniel\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/austinjtwining/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daniel\\Source\\Repos\\Sandbox\\Desktop\\Sandbox.Desktop.csproj",
+      "projectUniqueName": "/Users/austinjtwining/Projects/Sandbox/Desktop/Sandbox.Desktop.csproj",
       "projectName": "Sandbox.Desktop",
-      "projectPath": "C:\\Users\\Daniel\\Source\\Repos\\Sandbox\\Desktop\\Sandbox.Desktop.csproj",
-      "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daniel\\Source\\Repos\\Sandbox\\Desktop\\obj\\",
+      "projectPath": "/Users/austinjtwining/Projects/Sandbox/Desktop/Sandbox.Desktop.csproj",
+      "packagesPath": "/Users/austinjtwining/.nuget/packages/",
+      "outputPath": "/Users/austinjtwining/Projects/Sandbox/Desktop/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/austinjtwining/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://teamcity.monogame.net/guestAuth/app/nuget/v1/FeedService.svc/": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -874,7 +823,7 @@
           },
           "MonoGame.Content.Builder": {
             "target": "Package",
-            "version": "[3.7.0.4, )"
+            "version": "[3.7.0.9, )"
           },
           "MonoGame.Framework.DesktopGL.Core": {
             "target": "Package",

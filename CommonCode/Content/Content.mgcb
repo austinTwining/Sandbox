@@ -3,7 +3,7 @@
 
 /outputDir:bin/$(Platform)
 /intermediateDir:obj/$(Platform)
-/platform:Windows
+/platform:DesktopGL
 /config:
 /profile:Reach
 /compress:False
@@ -13,7 +13,7 @@
 
 #---------------------------------- Content ---------------------------------#
 
-#begin manOld_stand.png
+#begin emote_faceAngry.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -23,5 +23,5 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:manOld_stand.png
+/build:emote_faceAngry.png
 
