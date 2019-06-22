@@ -19,7 +19,8 @@ namespace Sandbox
             screenSize = s;
         }
 
-        public new void Update(GameTime gameTime)
+
+        public override void Update(GameTime gameTime)
         {
 
             position += velocity * (float)gameTime.ElapsedGameTime.TotalSeconds;
@@ -30,7 +31,7 @@ namespace Sandbox
             base.Update(gameTime);
         }
 
-        public new void Draw(SpriteBatch sb, GameTime gt)
+        public override void Draw(SpriteBatch sb, GameTime gt)
         {
             base.Draw(sb, gt);
         }

@@ -16,12 +16,12 @@ namespace Sandbox
             position = p;
         }
 
-        public void Update(GameTime gameTime)
+        public virtual void Update(GameTime gameTime)
         {
             
         }
 
-        public void Draw(SpriteBatch sb, GameTime gt)
+        public virtual void Draw(SpriteBatch sb, GameTime gt)
         {
             sb.Draw(texture, position, Color.White);
         }
