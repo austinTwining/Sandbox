@@ -18,12 +18,11 @@ namespace Sandbox
         ArrayList gameObjects;
         Vector2 screenSize;
 
-        Random rand = new Random();
-
         public GameCore()
         {
             graphics = new GraphicsDeviceManager(this);
-            Content.RootDirectory = "Content";	
+            Content.RootDirectory = "Content";
+
         }
 
         protected override void Initialize()

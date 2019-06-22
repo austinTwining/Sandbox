@@ -11,7 +11,7 @@ namespace Sandbox
         , Theme = "@style/Theme.Splash"
         , AlwaysRetainTaskState = true
         , LaunchMode = LaunchMode.SingleInstance
-        , ScreenOrientation = ScreenOrientation.FullUser
+        , ScreenOrientation = ScreenOrientation.Landscape
         , ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.Keyboard | ConfigChanges.KeyboardHidden | ConfigChanges.ScreenSize)]
     public class Activity1 : Microsoft.Xna.Framework.AndroidGameActivity
     {
@@ -19,9 +19,11 @@ namespace Sandbox
         {
             base.OnCreate(bundle);
             var g = new GameCore();
+            this.Window.DecorView.SystemUiVisibility = (StatusBarVisibility)(SystemUiFlags.HideNavigation | SystemUiFlags.Fullscreen);
             SetContentView((View)g.Services.GetService(typeof(View)));
             g.Run();
         }
+
     }
 }
 
