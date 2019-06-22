@@ -583,7 +583,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.0.0": {
-      "sha512": "VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
+      "sha512": "5BdAWDgMNwf90L0J+C/eh6kfHDa37ViL1cBL1nv5zPA4TB2cGV51YiQyvzCEy9DBE0LwwMI4+PkUpIekKyocSA==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.0.0",
       "files": [
@@ -826,29 +826,30 @@
     ]
   },
   "packageFolders": {
-    "/Users/austinjtwining/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Daniel\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/austinjtwining/Projects/Sandbox/Desktop/Sandbox.Desktop.csproj",
+      "projectUniqueName": "C:\\Users\\Daniel\\Source\\Repos\\Sandbox\\Desktop\\Sandbox.Desktop.csproj",
       "projectName": "Sandbox.Desktop",
-      "projectPath": "/Users/austinjtwining/Projects/Sandbox/Desktop/Sandbox.Desktop.csproj",
-      "packagesPath": "/Users/austinjtwining/.nuget/packages/",
-      "outputPath": "/Users/austinjtwining/Projects/Sandbox/Desktop/obj/",
+      "projectPath": "C:\\Users\\Daniel\\Source\\Repos\\Sandbox\\Desktop\\Sandbox.Desktop.csproj",
+      "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Daniel\\Source\\Repos\\Sandbox\\Desktop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/austinjtwining/.config/NuGet/NuGet.Config"
+        "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "http://teamcity.monogame.net/guestAuth/app/nuget/v1/FeedService.svc/": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
