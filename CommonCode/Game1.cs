@@ -1,5 +1,6 @@
 ﻿#region Using Statements
 using System;
+using System.Collections;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -16,11 +17,12 @@ namespace Sandbox
 
     public class GameCore : Game
     {
-        GraphicsDeviceManager graphics;
+        static GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Texture2D tex;
-        Vector2 position;
-        Vector2 velocity;
+        ArrayList gameObjects;
+        Vector2 screenSize;
+
+        Random rand = new Random();
 
         public GameCore()
         {
@@ -37,8 +39,8 @@ namespace Sandbox
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            position = new Vector2(100, 100);
-            velocity = new Vector2(100, 100);
+            gameObjects = new ArrayList();
+            screenSize = new Vector2(graphics.GraphicsDevice.Viewport.Width, graphics.GraphicsDevice.Viewport.Height);
             base.Initialize();
         }
 
@@ -52,7 +54,10 @@ namespace Sandbox
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             //TODO: use this.Content to load your game content here
-            tex = Content.Load<Texture2D>("manOld_stand");
+            for(int i = 0; i < 10; i++)
+            {
+                gameObjects.Add(new BouncingBall(Content.Load<Texture2D>("manOld_stand"), new Vector2(rand.Next(1, (int)screenSize.X), rand.Next(1, (int)screenSize.Y)), screenSize));
+            }
         }
 
         /// <summary>
@@ -63,11 +68,10 @@ namespace Sandbox
         protected override void Update(GameTime gameTime)
         {
             // TODO: Add your update logic here
-
-            position += velocity * (float)gameTime.ElapsedGameTime.TotalSeconds;
-
-           if(position.Y > graphics.GraphicsDevice.Viewport.Height - tex.Height || position.Y < 0) velocity.Y = -velocity.Y;
-           if(position.X > graphics.GraphicsDevice.Viewport.Width - tex.Width || position.X < 0) velocity.X = -velocity.X;
+            foreach (BouncingBall g in gameObjects)
+            {
+                g.Update(gameTime);
+            }
 
             base.Update(gameTime);
         }
@@ -83,7 +87,10 @@ namespace Sandbox
             //TODO: Add your drawing code here
             spriteBatch.Begin();
 
-            spriteBatch.Draw(tex, position, Color.White);
+            foreach(GameObject g in gameObjects)
+            {
+                g.Draw(spriteBatch, gameTime);
+            }
 
             spriteBatch.End();
 
