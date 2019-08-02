@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/emote_faceAngry.png</SourceFile>
-  <SourceTime>2018-07-08T14:48:22-04:00</SourceTime>
-  <DestFile>/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/bin/iOS/Content/emote_faceAngry.xnb</DestFile>
-  <DestTime>2019-06-22T11:26:59.772689-04:00</DestTime>
+  <SourceTime>2018-07-08T14:48:16-04:00</SourceTime>
+  <DestFile>/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/bin/emote_faceAngry.xnb</DestFile>
+  <DestTime>2019-08-02T19:09:10.7625827-04:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T11:35:14-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

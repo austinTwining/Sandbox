@@ -18,14 +18,13 @@ namespace Sandbox
         ArrayList gameObjects;
         Vector2 screenSize;
 
-        //test 3D Code
-        private Model model;
+        Camera cam;
 
-        private Matrix world;
-        private Matrix view;
-        private Matrix projection;
+        //BasicEffect for rendering
+        BasicEffect basicEffect;
 
-        Vector3 position;
+        //Geometric info
+        GameObject3D model;
 
         public GameCore()
         {
@@ -39,12 +38,18 @@ namespace Sandbox
             gameObjects = new ArrayList();
             screenSize = new Vector2(graphics.GraphicsDevice.Viewport.Width, graphics.GraphicsDevice.Viewport.Height);
 
-            //test 3D Code
-            world = Matrix.CreateTranslation(new Vector3(0, 0, 0));
-            view = Matrix.CreateLookAt(new Vector3(0, 0, 10), new Vector3(0, 0, 0), Vector3.UnitY);
-            projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45), screenSize.X / screenSize.Y, 0.1f, 100f);
+            cam = new Camera(GraphicsDevice.DisplayMode.AspectRatio);
 
-            position = new Vector3(0, 0, 0);
+            //BasicEffect
+            basicEffect = new BasicEffect(GraphicsDevice);
+            basicEffect.Alpha = 1f;
+
+            // Want to see the colors of the vertices, this needs to be on
+            basicEffect.VertexColorEnabled = true;
+
+            //Lighting requires normal information which VertexPositionColor does not have
+            //If you want to use lighting and VPC you need to create a custom def
+            basicEffect.LightingEnabled = false;
 
             base.Initialize();
         }
@@ -53,50 +58,31 @@ namespace Sandbox
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            //test 3D Code
-            model = Content.Load<Model>("toilet");
-
             gameObjects.Add(new Player(Content.Load<Texture2D>("emote_faceAngry"), new Vector2(300, 300)));
+
+            model = new GameObject3D(Content.Load<Model>("MonoCube"), new Vector3(0, 0, 0));
         }
 
         protected override void Update(GameTime gameTime)
         {
             foreach (GameObject g in gameObjects) g.Update(gameTime);
 
-            //test 3D Code
-            position += new Vector3(0, 0.01f, 0);
-            world = Matrix.CreateTranslation(position);
+            cam.Update(gameTime);
+
 
             base.Update(gameTime);
         }
 
-        protected override void Draw(GameTime gameTime)
-        {
+        protected override void Draw(GameTime gameTime){
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin();
             foreach(GameObject g in gameObjects) g.Draw(spriteBatch, gameTime);
             spriteBatch.End();
 
-            //test 3D Code
-            DrawModel(model, world, view, projection);
+            model.Draw(cam.view, cam.projection);
+
 
             base.Draw(gameTime);
-        }
-
-        //test 3D Code
-        private void DrawModel(Model model, Matrix world, Matrix view, Matrix projection)
-        {
-            foreach (ModelMesh mesh in model.Meshes)
-            {
-                foreach (BasicEffect effect in mesh.Effects)
-                {
-                    effect.World = world;
-                    effect.View = view;
-                    effect.Projection = projection;
-                }
-
-                mesh.Draw();
-            }
         }
     }
 }

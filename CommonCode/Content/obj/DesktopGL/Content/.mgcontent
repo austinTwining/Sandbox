@@ -5,7 +5,7 @@
   <Config />
   <SourceFiles>
     <File>/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/emote_faceAngry.png</File>
-    <File>/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/toilet.fbx</File>
+    <File>/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/MonoCube.dae</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

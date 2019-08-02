@@ -1,3 +1,0 @@
-Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/emote_faceAngry.png","/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/bin/iOS/Content/emote_faceAngry.xnb","TextureProcessor","Texture2DContent",591,4949,0.17169
-"/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/toilet.fbx","/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/bin/iOS/Content/toilet.xnb","ModelProcessor","ModelContent",45766,13282,0.264645
