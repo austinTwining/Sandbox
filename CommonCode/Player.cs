@@ -12,6 +12,7 @@ namespace Sandbox
         public Player(Texture2D t, Vector2 p) : base(t, p) {}
 
         private KeyboardState keyState { get => Keyboard.GetState(); }
+        private MouseState mouseState { get => Mouse.GetState(); }
         private int speed = 3;
 
         public override void Update(GameTime gameTime)

@@ -1,4 +1,5 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/emote_faceAngry.png","/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/bin/emote_faceAngry.xnb","TextureProcessor","Texture2DContent",184,1109,0.184187
-"/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/MonoCube.dae","/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/bin/MonoCube.xnb","ModelProcessor","ModelContent",5762,1514,1.607197
-"/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/MonoCubeTexture.png","/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/bin/MonoCubeTexture_0.xnb","TextureProcessor","Texture2DContent",286178,699189,1.473151
+"/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/emote_faceAngry.png","/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/bin/emote_faceAngry.xnb","TextureProcessor","Texture2DContent",184,1109,0.14269
+"/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/MonoCube.dae","/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/bin/MonoCube.xnb","ModelProcessor","ModelContent",5762,1514,1.864872
+"/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/MonoCubeTexture.png","/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/bin/MonoCubeTexture_0.xnb","TextureProcessor","Texture2DContent",286178,699189,1.683181
+"/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/watercraftPack_007.obj","/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/bin/watercraftPack_007.xnb","ModelProcessor","ModelContent",375030,378349,0.419004

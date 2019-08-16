@@ -4,11 +4,11 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/emote_faceAngry.png</File>
     <File>/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/MonoCube.dae</File>
+    <File>/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/emote_faceAngry.png</File>
+    <File>/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/watercraftPack_007.obj</File>
   </SourceFiles>
   <DestFiles>
-    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

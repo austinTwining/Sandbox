@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/MonoCube.dae</SourceFile>
-  <SourceTime>2015-08-20T13:03:42-04:00</SourceTime>
-  <DestFile>/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/bin/MonoCube.xnb</DestFile>
-  <DestTime>2019-08-03T18:25:22.2224956-04:00</DestTime>
+  <SourceFile>/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/watercraftPack_007.obj</SourceFile>
+  <SourceTime>2016-06-06T18:13:24-04:00</SourceTime>
+  <DestFile>/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/bin/watercraftPack_007.xnb</DestFile>
+  <DestTime>2019-08-02T19:40:06.6572837-04:00</DestTime>
   <Importer>FbxImporter</Importer>
   <ImporterTime>2018-12-08T11:35:14-05:00</ImporterTime>
   <Processor>ModelProcessor</Processor>
@@ -65,8 +65,6 @@
     <Value>Compressed</Value>
   </Parameters>
   <Dependencies />
-  <BuildAsset>
-    <string>/Users/austinjtwining/Projects/Sandbox/CommonCode/Content/bin/MonoCubeTexture_0.xnb</string>
-  </BuildAsset>
+  <BuildAsset />
   <BuildOutput />
 </PipelineBuildEvent>

@@ -23,9 +23,6 @@ namespace Sandbox
         //BasicEffect for rendering
         BasicEffect basicEffect;
 
-        //Geometric info
-        GameObject3D model;
-
         public GameCore()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -37,8 +34,10 @@ namespace Sandbox
         {
             gameObjects = new ArrayList();
             screenSize = new Vector2(graphics.GraphicsDevice.Viewport.Width, graphics.GraphicsDevice.Viewport.Height);
+            Mouse.SetPosition((int)screenSize.X / 2, (int)screenSize.Y / 2);
 
-            cam = new Camera(GraphicsDevice.DisplayMode.AspectRatio);
+            cam = new Camera(this, new Vector3(0f, 0f, 0f), Vector3.Zero, 10f);
+            Components.Add(cam);
 
             //BasicEffect
             basicEffect = new BasicEffect(GraphicsDevice);
@@ -58,14 +57,14 @@ namespace Sandbox
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            gameObjects.Add(new Player(Content.Load<Texture2D>("emote_faceAngry"), new Vector2(300, 300)));
-
-            model = new GameObject3D(Content.Load<Model>("MonoCube"), new Vector3(0, 0, 0));
+            gameObjects.Add(new GameObject3D(Content.Load<Model>("MonoCube"), new Vector3(0, 0, 5)));
+            gameObjects.Add(new GameObject3D(Content.Load<Model>("MonoCube"), new Vector3(5, 0, 5)));
+            gameObjects.Add(new GameObject3D(Content.Load<Model>("MonoCube"), new Vector3(-5, 5, 5)));
         }
 
         protected override void Update(GameTime gameTime)
         {
-            foreach (GameObject g in gameObjects) g.Update(gameTime);
+            foreach (GameObject3D g in gameObjects) g.Update(gameTime);
 
             cam.Update(gameTime);
 
@@ -76,11 +75,11 @@ namespace Sandbox
         protected override void Draw(GameTime gameTime){
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin();
-            foreach(GameObject g in gameObjects) g.Draw(spriteBatch, gameTime);
+            //2D rendering
             spriteBatch.End();
 
-            model.Draw(cam.view, cam.projection);
-
+            //3D game object rendering
+            foreach (GameObject3D g in gameObjects) g.Draw(cam.View, cam.Projection);
 
             base.Draw(gameTime);
         }
